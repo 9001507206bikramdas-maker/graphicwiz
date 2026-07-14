@@ -79,35 +79,102 @@ $(document).ready(function () {
   });
 
 
-  var swiper = new Swiper(".mySeriveSwiper", {
-    slidesPerView: 3,
+new Swiper(".mySeriveSwiper", {
+    autoplay: true,
+    slidesPerView: 4,
     spaceBetween: 30,
-    // autoplay: false,
 
-    // autoplay: {
-    //   delay: 3000,
-    //   disableOnInteraction: false,
-    // },
+    pagination: {
+        el: ".service-pagination",
+        clickable: true,
+    },
 
-    // pagination: {
-    //   el: ".swiper-pagination",
-    //   clickable: true,
-    // },
+    navigation: {
+        nextEl: ".service-next",
+        prevEl: ".service-prev",
+    },
 
     breakpoints: {
-      0: {
-        slidesPerView: 1,
-      },
-      576: {
-        slidesPerView: 3,
-      },
-      992: {
-        slidesPerView: 3.5,
-      },
+        0: {
+            slidesPerView: 1,
+        },
+        576: {
+            slidesPerView: 2,
+        },
+        992: {
+            slidesPerView: 3.5,
+        },
+        1440: {
+            slidesPerView: 3.5,
+        },
+         
     },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
+
+});
+
+
+const menuBtn = document.querySelector(".menu-open");
+const sidebar = document.querySelector(".navigation");
+const blurBg = document.querySelector(".blur-background");
+
+// Open Menu
+menuBtn.addEventListener("click", () => {
+    sidebar.classList.add("open-navigation");
+    blurBg.classList.add("active");
+    document.body.style.overflow = "hidden";
+});
+
+// Close Menu
+function closeMenu() {
+    sidebar.classList.remove("open-navigation");
+    blurBg.classList.remove("active");
+    document.body.style.overflow = "";
+}
+
+// Click on blur background
+blurBg.addEventListener("click", closeMenu);
+
+// Press ESC to close
+document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+        closeMenu();
+    }
+});
+
+const header = document.querySelector("header");
+
+let lastScroll = 0;
+
+window.addEventListener("scroll", () => {
+
+    const currentScroll = window.pageYOffset;
+
+    // Top of page
+    if (currentScroll <= 50) {
+        header.classList.remove("sticky", "show");
+        header.classList.add("top");
+        lastScroll = currentScroll;
+        return;
+    }
+
+    header.classList.remove("top");
+    header.classList.add("sticky");
+
+    // Scroll Up
+    if (currentScroll < lastScroll) {
+        header.classList.add("show");
+    }
+    // Scroll Down
+    else {
+        header.classList.remove("show");
+    }
+
+    lastScroll = currentScroll;
+});
+
+AOS.init({
+    duration: 1000,
+    once: true,
+    offset: 100
+});
 });

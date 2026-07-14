@@ -301,7 +301,7 @@ header .navigation .navigation-menu .navigation-item a.active{  background:
 /* ********|| BANNER ENDS ||******** */
 
 /* ********|| ABOUT SECTION START ||******** */
-.section-about{  position: relative;  display: flex; flex-direction: column; gap: 12px; padding: 0 0 120px 0;}
+.section-about{  position: relative;  display: flex; flex-direction: column; gap: 12px; padding: 0 0 120px 0; overflow-x: hidden;}
 .section-about .container{position: relative;}
 .section-about .container h3{position: absolute; z-index: 1; top: -100px; font-size: 100px; color: var(--textStyle); font-family: "Lemon Milk", sans-serif; line-height: 1.2; margin: 0px;}
 .section-about h2{font-size: 60px; font-family: "Lemon Milk", sans-serif; line-height: 1.2; width: 100%; max-width: 950px; margin-bottom: 10px; background: linear-gradient(to right, #0DAAC9, #2B6A9D, #581D65, #981B8A);
@@ -324,7 +324,7 @@ header .navigation .navigation-menu .navigation-item a.active{  background:
 /* ********|| ABOUT SECTION ENDS ||******** */
 
 /* ********|| WORK SECTION START ||******** */
-.section-wrok{position: relative; padding-bottom: 120px;}
+.section-wrok{position: relative; padding-bottom: 120px; overflow-x: hidden;}
 .section-wrok .wrok-container-wrap{position: relative; background-color: var(--backGroundColor); padding: 40px 0px; padding: 100px 0;}
 .section-wrok .title-wrap{font-size: 60px; font-family: "Lemon Milk", sans-serif; font-weight: 700; line-height: 1.2; max-width: 950px; width: 100%; }
 .section-wrok .title-wrap .cercle{position: absolute; z-index: 1; width: 530px; height: 530px; border-radius: 100%; background: linear-gradient(to right, #4DA6FF, #B100FF); opacity: 10%; top: 30px; left: 25px; animation: floatCircle 6s ease-in-out infinite;}
@@ -371,7 +371,7 @@ header .navigation .navigation-menu .navigation-item a.active{  background:
 .work-item .working-details .details{font-size: 18px; line-height: 1.4; color: #DDDDDD;}
 /* ********|| WORK SECTION ENDS ||******** */
 /* ********|| SERVICE SECTION START ||******** */
-.section-service{position: relative;}
+.section-service{position: relative; overflow-x: hidden;}
 .section-service h4{font-family: "Lemon Milk", sans-serif; text-transform: uppercase; font-weight: 700; color: var(--black); margin: 0px; margin-bottom: 16px;}
 .section-service h2{max-width: 685px; width: 100%; margin: 0px; line-height: 1.2; margin-bottom: 10px; font-size: 62px;}
 .section-service .details{max-width: 950px; width: 100%; font-size: 18px; font-weight: 400; color: var(--subHeading); line-height: 1.3; margin-bottom: 30px;}
@@ -428,7 +428,7 @@ header .navigation .navigation-menu .navigation-item a.active{  background:
 
 
 /* ********|| CONTACT SECTION START ||******** */
-.section-contact{position: relative; padding-top: 120px; margin-bottom: -160px;}
+.section-contact{position: relative; padding-top: 120px; margin-bottom: -160px; overflow-x: hidden;}
 .section-contact h2{text-align: center;}
 .section-contact .details{text-align: center; font-size: 20px; color: var(--subHeading); margin-top: 20px;}
 .section-contact .contact-content-wrap{display: flex;  border-radius: 10px; background-color: var(--white); padding: 12px;  margin-top: 56px;}
@@ -495,7 +495,7 @@ header .navigation .navigation-menu .navigation-item a.active{  background:
 
 
 /* ********|| FOOTER STARTS ||******** */
-.footer{ background:linear-gradient(135deg,#0B5D63 0%,#3D0A5F 45%,#5A005A 100%); padding:235px 0px 35px 0px;}
+.footer{ background:linear-gradient(135deg,#0B5D63 0%,#3D0A5F 45%,#5A005A 100%); padding:235px 0px 35px 0px; overflow-x: hidden;}
 .footer-top{ display:grid; grid-template-columns:1.2fr 1fr 1fr 1.4fr; gap:70px; padding:45px 0; border-top:1px solid rgba(255,255,255,.12); border-bottom:1px solid rgba(255,255,255,.12);}
 .footer-logo  { display: flex; align-items: center; justify-content: center;}
 .footer-logo img{  max-width:180px;} 
@@ -512,6 +512,7 @@ header .navigation .navigation-menu .navigation-item a.active{  background:
 /* ********|| FOOTER END ||******** */
 
 /* ********|| SERVICE PAGE START ||******** */
+.inner-section-service  { overflow-x: hidden; }
 .inner-section-service .container h3 { position: absolute; z-index: 1; top: -100px; font-size: 100px; color: var(--textStyle); font-family: "Lemon Milk", sans-serif; line-height: 1.2; margin: 0px;}
 .inner-section-service .container h4 { font-family: "Lemon Milk", sans-serif; font-weight: 700; color: var(--black); margin: 0px; margin-bottom: 6px;}
 .inner-section-service h2 {max-width: 895px; margin-bottom: 80px;}
@@ -661,7 +662,7 @@ content .user-image-list .img-item .img-wrap { width: 78px;height: 78px; }
 	
 }
 @media screen and (max-width: 1024px) {
-  
+  .container{padding:  0 14px;}
 }
 @media screen and (max-width: 990px) { 
     /* .blur-background{ position: absolute; top: 0; left: 0; width: 100%; height: 100vh; z-index: 8;
@@ -755,11 +756,12 @@ content .user-image-list .img-item .img-wrap { width: 78px;height: 78px; }
 .section-banner video:nth-child(2){display: none;}
 .section-banner video:nth-child(3){display: block;}
   
-.inner-section-service{padding: 0 10px;}
+/* .inner-section-service{padding: 0 10px;} */
 .section-banner video:nth-child(1){display: none;}
     .section-banner video:nth-child(2){display: block;} 
 }
 @media screen and (max-width: 480px) {
+  .container{padding:  0 10px;}
 .logo-wrap {max-height: 40px; }
 .btn-wrap {gap: 4px;}
 .alt-btn {font-size: 12px; padding: 8px 14px;}
@@ -784,7 +786,7 @@ header.top { padding: 20px 10px;}
 .section-wrok .title-wrap h3 span { font-size: 30px; margin-right: 6px; }
 .section-wrok .title-wrap .cercle { width: 190px; height: 190px;}
 
-.section-service {padding: 0 10px;}
+/* .section-service {padding: 0 10px;} */
 .section-service .details {max-width: 100%; font-size: 16px; line-height: 1.6; }
 
 .section-service h2 { max-width: 100%; width: 100%; font-size: 25px;} 
@@ -795,7 +797,7 @@ header.top { padding: 20px 10px;}
 .contact-content-wrap .contact-form { padding: 10px;}
 .contact-form form .form-group { width: 100%;}
 .form-group { margin: 0 0 0px;}
-footer .container { padding: 0 10px;}
+/* footer .container { padding: 0 10px;} */
 .footer-logo img { max-width: 100px;}
 .footer-top {  gap: 20px;}
 

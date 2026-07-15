@@ -141,36 +141,50 @@ document.addEventListener("keydown", (e) => {
     }
 });
 
-const header = document.querySelector("header");
+// const header = document.querySelector("header");
 
-let lastScroll = 0;
+// let lastScroll = 0;
 
-window.addEventListener("scroll", () => {
+// window.addEventListener("scroll", () => {
 
-    const currentScroll = window.pageYOffset;
+//     const currentScroll = window.pageYOffset;
 
-    // Top of page
-    if (currentScroll <= 50) {
-        header.classList.remove("sticky", "show");
-        header.classList.add("top");
-        lastScroll = currentScroll;
-        return;
+//     // Top of page
+//     if (currentScroll <= 50) {
+//         header.classList.remove("sticky", "show");
+//         header.classList.add("top");
+//         lastScroll = currentScroll;
+//         return;
+//     }
+
+//     header.classList.remove("top");
+//     header.classList.add("sticky");
+
+//     // Scroll Up
+//     if (currentScroll < lastScroll) {
+//         header.classList.add("show");
+//     }
+//     // Scroll Down
+//     else {
+//         header.classList.remove("show");
+//     }
+
+//     lastScroll = currentScroll;
+// });
+
+// Sticky Header on Scroll (always visible)
+(function () {
+  const header = document.querySelector("header");
+  const stickyOffset = 100; // কত px scroll করলে sticky style আসবে
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > stickyOffset) {
+      header.classList.add("sticky", "show");
+    } else {
+      header.classList.remove("sticky", "show");
     }
-
-    header.classList.remove("top");
-    header.classList.add("sticky");
-
-    // Scroll Up
-    if (currentScroll < lastScroll) {
-        header.classList.add("show");
-    }
-    // Scroll Down
-    else {
-        header.classList.remove("show");
-    }
-
-    lastScroll = currentScroll;
-});
+  });
+})();
 
 AOS.init({
     duration: 1000,

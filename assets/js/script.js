@@ -116,25 +116,21 @@ new Swiper(".mySeriveSwiper", {
 const menuBtn = document.querySelector(".menu-open");
 const sidebar = document.querySelector(".navigation");
 const blurBg = document.querySelector(".blur-background");
-
-// Open Menu
+ 
 menuBtn.addEventListener("click", () => {
     sidebar.classList.add("open-navigation");
     blurBg.classList.add("active");
     document.body.style.overflow = "hidden";
 });
-
-// Close Menu
+ 
 function closeMenu() {
     sidebar.classList.remove("open-navigation");
     blurBg.classList.remove("active");
     document.body.style.overflow = "";
 }
-
-// Click on blur background
+ 
 blurBg.addEventListener("click", closeMenu);
-
-// Press ESC to close
+ 
 document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") {
         closeMenu();
@@ -170,18 +166,16 @@ document.addEventListener("keydown", (e) => {
 //     }
 
 //     lastScroll = currentScroll;
-// });
-
-// Sticky Header on Scroll (always visible)
+// }); 
 (function () {
   const header = document.querySelector("header");
-  const stickyOffset = 100; // কত px scroll করলে sticky style আসবে
+  const stickyOffset = 0;
 
   window.addEventListener("scroll", function () {
     if (window.scrollY > stickyOffset) {
-      header.classList.add("sticky", "show");
+      header.classList.add("sticky");
     } else {
-      header.classList.remove("sticky", "show");
+      header.classList.remove("sticky");
     }
   });
 })();

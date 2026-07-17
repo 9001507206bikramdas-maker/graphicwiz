@@ -253,11 +253,11 @@ h2{font-size: 60px; font-family: "Lemon Milk", sans-serif; line-height: 1.2;  ma
 
 header {
 position: relative;  width: 100%; padding: 12px 0; z-index: 999; background-color: #000; transition: background .35s ease, padding .35s ease, box-shadow .35s ease;}
-header.sticky {position: fixed;   top: 0; left: 0; background-color: #000; -webkit-backdrop-filter: blur(15px); box-shadow: 0 5px 20px rgba(0,0,0,.4); padding: 12px 0; transition: background .35s ease, padding .35s ease, box-shadow .35s ease;} 
+header.sticky {position: sticky;   top: 0; left: 0; background-color: #000; -webkit-backdrop-filter: blur(15px); box-shadow: 0 5px 20px rgba(0,0,0,.4); padding: 12px 0; transition: background .35s ease, padding .35s ease, box-shadow .35s ease;} 
 header .container { display: flex;  align-items: center;  margin: 0 auto; }
 
  
-.logo-wrap{width: 82px;    aspect-ratio: 3 / 2; overflow: hidden;}
+.logo-wrap{width: 82px; aspect-ratio: 3 / 2; overflow: hidden;}
 .logo-wrap img{width: 100%; height: 100%; object-fit: contain;}
 header .navigation{display: flex; align-items: center; margin-left: auto;}
 header .navigation .navigation-menu{display: flex; align-items: center; list-style: none; }
@@ -379,7 +379,7 @@ header .navigation .navigation-menu .navigation-item a.active{  background:
 
 .section-service .service-container{position: relative;}
 .section-service .service-container .service-item{min-height: 400px; max-height: 400px; height: 100%; background-color: var(--black); border-radius: 10px;  overflow: hidden; display: flex; flex-direction: column;}
-.section-service .service-container .service-item .img-wrap{position: absolute; left: 0; top: 0; z-index: 1; width: 100%; height: 100%; overflow: hidden; border-radius: 40px;}
+.section-service .service-container .service-item .img-wrap{position: absolute; left: 0; top: 0; z-index: 1; width: 100%; height: 100%; overflow: hidden; border-radius: 10px;}
 .section-service .service-container .service-item .img-wrap img{width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;}
 .section-service .service-container .service-item:hover .img-wrap img{transform: scale(1.2);}
 .section-service .service-container .service-item .service-details-wrap{position: relative; z-index: 2; padding: 16px; margin-top: auto;}

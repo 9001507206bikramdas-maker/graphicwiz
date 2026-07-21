@@ -274,7 +274,7 @@ header .navigation .navigation-menu .navigation-item a.active{  background:
 
 /* ********|| BANNER START ||******** */
 .container{ margin-left: auto; margin-right: auto;}
-.section-banner {position: relative; height: 100vh; width: 100%;  background-color: var(--black); margin-bottom: 120px;  display: flex;  align-items: center;}
+.section-banner {position: relative; height: 100vh; width: 100%;  background-color: var(--black);   display: flex;  align-items: center;}
 .section-banner .banner-video  { position: absolute; inset: 0; z-index: 0;} 
 .section-banner video{ width: 100%; height: 100%; object-fit: cover;  }
 .section-banner video source{ width: 100%; height: 100%; object-fit: cover;}
@@ -302,7 +302,7 @@ header .navigation .navigation-menu .navigation-item a.active{  background:
 /* ********|| BANNER ENDS ||******** */
 
 /* ********|| ABOUT SECTION START ||******** */
-.section-about{  position: relative;  display: flex; flex-direction: column; gap: 12px; padding: 0 0 120px 0; overflow-x: hidden;}
+.section-about{  position: relative;  display: flex; flex-direction: column; gap: 12px; padding: 120px 0 120px 0; overflow-x: hidden;}
 .section-about .container{position: relative;}
 .section-about .container h3{position: absolute; z-index: 1; top: -100px; font-size: 100px; color: var(--textStyle); font-family: "Lemon Milk", sans-serif; line-height: 1.2; margin: 0px;}
 .section-about h2{font-size: 60px; font-family: "Lemon Milk", sans-serif; line-height: 1.2; width: 100%; max-width: 950px; margin-bottom: 10px; background: linear-gradient(to right, #0DAAC9, #2B6A9D, #581D65, #981B8A);
@@ -514,7 +514,8 @@ header .navigation .navigation-menu .navigation-item a.active{  background:
 /* ********|| FOOTER END ||******** */
 
 /* ********|| SERVICE PAGE START ||******** */
-.inner-section-service  { overflow-x: hidden; }
+ 
+.inner-section-service  { overflow-x: hidden;   padding: 120px 0 120px 0;}
 .inner-section-service .container h3 { position: absolute; z-index: 1; top: -100px; font-size: 100px; color: var(--textStyle); font-family: "Lemon Milk", sans-serif; line-height: 1.2; margin: 0px;}
 .inner-section-service .container h4 { font-family: "Lemon Milk", sans-serif; font-weight: 700; color: var(--black); margin: 0px; margin-bottom: 6px;}
 .inner-section-service h2 {max-width: 895px; margin-bottom: 80px;}
@@ -616,7 +617,7 @@ position: relative; z-index: 2; height: 100%; display: flex; flex-direction: col
 header .navigation .navigation-menu .navigation-item { font-size: 14px;}
 header .navigation .navigation-menu .navigation-item a.active { padding: 6px 16px; }
 
-.section-banner { margin-bottom: 100px;}
+/* .section-banner { margin-bottom: 100px;} */
 
 .alt-btn { position: relative; font-size: 13px; padding: 10px 18px; }
 .section-about .container h3 { font-size: 80px; top: -80px;}
@@ -652,7 +653,7 @@ content .user-image-list .img-item .img-wrap { width: 78px;height: 78px; }
 
 .section-banner .container .banner-content .title { font-size: 32px; }
 .section-banner .container .banner-content .banner-des { max-width: 830px;  font-size: 14px; }
-.inner-section-service .container h3 { font-size: 80px;top: -80px;}
+.inner-section-service .container h3 { font-size: 80px;top: 10px;}
 .inner-section-service h2 { font-size: 50px; max-width: 800px; margin-bottom: 60px;}
  
 .section-cta { padding-top: 90px; }
@@ -706,10 +707,12 @@ content .user-image-list .img-item .img-wrap { width: 78px;height: 78px; }
     .footer-logo{ grid-column:span 2; text-align:left; justify-content: flex-start;}
     .footer-logo img{ margin:0;}
 
+    .inner-section-service { padding: 90px 0 90px 0;}
     .inner-section-service h2 { margin-bottom: 20px;}
     .inner-section-service .service-items .service-item { display: flex; position: relative; align-items: flex-start; gap: 48px; padding: 20px 10px 0px;}
     .inner-section-service .service-items {gap: 60px;}
-    .inner-section-service .container h3 {font-size: 60px; top: -70px;}
+  
+    .inner-section-service .container h3 {font-size: 60px; }
     
     .inner-section-service h2 {font-size: 45px;}
 
@@ -757,6 +760,8 @@ content .user-image-list .img-item .img-wrap { width: 78px;height: 78px; }
 /* .inner-section-service{padding: 0 10px;} */
 .section-banner video:nth-child(1){display: none;}
 .section-banner video:nth-child(2){display: block;} 
+
+.inner-section-service .container h3 { font-size: 30px;}
 }
 @media screen and (max-width: 480px) {
 
@@ -773,8 +778,8 @@ header .btn-wrap { gap: 14px; margin-left: auto;}
 .btn-wrap .menu-open i{font-size: 12px;}
 .btn-wrap .menu-open { border: 1px solid var(--shades02); }
 header.top { padding: 20px 10px;}
-.section-banner { margin-bottom: 60px;}
-.section-about { padding: 0 10px 60px 10px;}
+/* .section-banner { margin-bottom: 60px;} */
+.section-about { padding: 60px 10px 60px 10px;}
 .section-about .container h3 { font-size: 30px; top: -40px;}
 .section-about h2 {font-size: 25px;}
 .section-about p { font-size: 16px; }
@@ -814,7 +819,9 @@ header.top { padding: 20px 10px;}
 .section-banner .container .banner-content .sub-title {  font-size: 14px;  letter-spacing: 0.5em; line-height: 1.2; margin: 0 0 16px 0;}
 .section-banner .container .banner-content .title { font-size: 22px; margin: 0 10px 10px; }
 .section-banner .container .banner-content .banner-des{max-width: 100%;font-size: 12px;}
-.inner-section-service .container h3 { font-size: 30px; top: -40px;}
+
+.inner-section-service { padding: 60px 10px 60px 10px; }
+.inner-section-service .container h3 { font-size: 30px;  }
 .inner-section-service h2 {font-size: 25px; margin-bottom: 30px;}
 
 .section-cta { padding-top: 40px; }

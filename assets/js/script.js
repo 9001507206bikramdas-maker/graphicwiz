@@ -80,7 +80,7 @@ $(document).ready(function () {
 
 
 new Swiper(".mySeriveSwiper", {
-    autoplay: true,
+    // autoplay: true,
     slidesPerView: 4,
     spaceBetween: 30,
 

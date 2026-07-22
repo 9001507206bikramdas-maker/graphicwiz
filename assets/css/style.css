@@ -375,7 +375,8 @@ header .navigation .navigation-menu .navigation-item a.active{  background:
 .section-service{position: relative; overflow-x: hidden;}
 .section-service h4{font-family: "Lemon Milk", sans-serif; text-transform: uppercase; font-weight: 700; color: var(--black); margin: 0px; margin-bottom: 16px;}
 .section-service h2{max-width: 685px; width: 100%; margin: 0px; line-height: 1.2; margin-bottom: 10px; font-size: 62px;}
-.section-service .details{max-width: 950px; width: 100%; font-size: 18px; font-weight: 400; color: var(--subHeading); line-height: 1.3; margin-bottom: 30px;}
+/* .section-service .details{max-width: 950px; width: 100%; font-size: 18px; font-weight: 400; color: var(--subHeading); line-height: 1.3; margin-bottom: 30px;} */
+.section-service .details{ width: 100%; font-size: 18px; font-weight: 400; color: var(--subHeading); line-height: 1.3; margin-bottom: 30px;}
 
 .section-service .service-container{position: relative;}
 .section-service .service-container .service-item{min-height: 400px; max-height: 400px; height: 100%; background-color: var(--black); border-radius: 10px;  overflow: hidden; display: flex; flex-direction: column;}

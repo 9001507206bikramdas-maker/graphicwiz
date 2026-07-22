@@ -241,6 +241,9 @@ h2{font-size: 60px; font-family: "Lemon Milk", sans-serif; line-height: 1.2;  ma
     background-clip: text;
     color: transparent;
     margin: 0;}
+
+html {scroll-behavior: smooth;}
+#contact-section {scroll-margin-top: 0px;}
 /* **********COMMON END********** */
 
 /*////////////////////////////////////////////////////////////////*/
@@ -516,8 +519,8 @@ header .navigation .navigation-menu .navigation-item a.active{  background:
 
 /* ********|| SERVICE PAGE START ||******** */
  
-.inner-section-service  { overflow-x: hidden;   padding: 120px 0 120px 0;}
-.inner-section-service .container h3 { position: absolute; z-index: 1; top: -100px; font-size: 100px; color: var(--textStyle); font-family: "Lemon Milk", sans-serif; line-height: 1.2; margin: 0px;}
+.inner-section-service  { overflow-x: hidden;   padding: 120px 0 0px 0;}
+.inner-section-service .container h3 { position: absolute; z-index: 1; top: 0px; font-size: 100px; color: var(--textStyle); font-family: "Lemon Milk", sans-serif; line-height: 1.2; margin: 0px;}
 .inner-section-service .container h4 { font-family: "Lemon Milk", sans-serif; font-weight: 700; color: var(--black); margin: 0px; margin-bottom: 6px;}
 .inner-section-service h2 {max-width: 895px; margin-bottom: 80px;}
 .inner-section-service .service-items {position: relative; display: flex; flex-direction: column; }

@@ -102,7 +102,7 @@ new Swiper(".mySeriveSwiper", {
             slidesPerView: 2,
         },
         992: {
-            slidesPerView: 3.5,
+            slidesPerView: 2.5,
         },
         1440: {
             slidesPerView: 3.5,

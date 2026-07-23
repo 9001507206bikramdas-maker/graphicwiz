@@ -479,7 +479,8 @@ header .navigation .navigation-menu .navigation-item a.active{  background:
 .contact-content-wrap .contact-details .social-media .icon-wrap:hover i { transform: scale(1); opacity: 1;   background: linear-gradient(to right, #4DA6FF, #B100FF); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
 }
 .contact-content-wrap .contact-form{padding: 12px 50px 12px 50px;}
-.contact-form form{ display: flex;   width: 100%; flex-wrap: wrap; gap: 25px;}
+.contact-form form{ display: flex;   width: 100%; flex-wrap: wrap; gap: 18px;}
+/* .contact-form form{ display: flex;   width: 100%; flex-wrap: wrap; gap: 25px;} */
 .contact-form form .form-group{ position: relative; width: calc(50% - 20px); margin: 0 0 0px;} 
 .contact-form form .form-group.full-width {width: 100%;}
 .contact-form form .form-group.full-width textarea {

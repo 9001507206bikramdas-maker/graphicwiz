@@ -338,7 +338,7 @@ header .navigation .navigation-menu .navigation-item a.active{  background:
 .section-wrok .wrok-container-wrap{position: relative; background-color: var(--backGroundColor); padding: 40px 0px; padding: 100px 0;}
 .section-wrok .title-wrap{font-size: 60px; font-family: "Lemon Milk", sans-serif; font-weight: 700; line-height: 1.2; max-width: 950px; width: 100%; }
 .section-wrok .title-wrap .cercle{position: absolute; z-index: 1; width: 530px; height: 530px; border-radius: 100%; background: linear-gradient(to right, #4DA6FF, #B100FF); opacity: 10%; top: 30px; left: 25px; animation: floatCircle 6s ease-in-out infinite;}
-.section-wrok .title-wrap h3{position: relative; z-index: 2; margin: 0px; font-size: 64px; color: var(--white); animation: slideText 9s infinite;} 
+.section-wrok .title-wrap h3{position: relative; z-index: 2; margin: 0px; font-size: 60px; color: var(--white); animation: slideText 9s infinite;} 
 
 
 
@@ -385,7 +385,7 @@ header .navigation .navigation-menu .navigation-item a.active{  background:
 .section-service h2{font-size: 40px;}
 .section-contact .details {  font-size: 18px;  margin-top: 10px;}
 .section-service h4{font-family: "Lemon Milk", sans-serif; text-transform: uppercase; font-weight: 700; color: var(--black); margin: 0px; margin-bottom: 16px;}
-.section-service h2{max-width: 685px; width: 100%; margin: 0px; line-height: 1.2; margin-bottom: 10px; font-size: 62px;}
+.section-service h2{max-width: 685px; width: 100%; margin: 0px; line-height: 1.2; margin-bottom: 10px; font-size: 60px;}
 /* .section-service .details{max-width: 950px; width: 100%; font-size: 18px; font-weight: 400; color: var(--subHeading); line-height: 1.3; margin-bottom: 30px;} */
 .section-service .details{ width: 100%; font-size: 20px; font-weight: 400; color: var(--subHeading); line-height: 1.3; margin-bottom: 30px;}
 
@@ -656,16 +656,20 @@ content .user-image-list .img-item .img-wrap { width: 78px;height: 78px; }
 .section-service h2 {font-size: 50px;}
 .section-service .service-container .service-item .service-details-wrap h4 {padding: 10px 18px; }
 .section-service h4 { margin-bottom: 10px;}
-.section-service .service-container .service-item .service-details p {font-size: 16px; }
+.section-service .service-container .service-item .service-details p {font-size: 14px; }
+.contact-form form .btn-wrap .alt-btn {padding: 14px 30px; gap: 10px;}
 
 .service-navigation { gap: 10px;margin-top: 25px;}
 
-.section-contact { position: relative; padding-top: 100px; margin-bottom: -160px;}
+.section-contact { position: relative; padding-top: 90px; margin-bottom: -160px;}
 
-.section-contact h2 {font-size: 50px;}
+.section-contact h2 {font-size: 36px;}
+.section-contact .details { font-size: 16px; margin-top: 8px;}
 
 .contact-content-wrap .contact-form {padding:   12px  40px;}
-.contact-form form { gap: 20px;}
+.form-control { min-height: 30px; }
+.contact-form form .form-group label { font-size: 14px;}
+.contact-form form {gap: 10px;}
 .contact-form .alt-btn { padding: 16px 30px;}
 .contact-form .alt-btn .btn-text { margin-right: 14px;}
 

@@ -442,7 +442,7 @@ header .navigation .navigation-menu .navigation-item a.active{  background:
 
 
 /* ********|| CONTACT SECTION START ||******** */
-.section-contact{position: relative; padding-top: 120px; margin-bottom: -160px; overflow-x: hidden;}
+.section-contact{position: relative; padding-top: 100px; margin-bottom: -160px; overflow-x: hidden;}
 .section-contact h2{text-align: center;     font-size: 40px;
 }
 .section-contact .details{text-align: center; font-size: 18px; color: var(--subHeading); margin-top: 10px;}

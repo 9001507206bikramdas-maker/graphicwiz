@@ -533,10 +533,11 @@ header .navigation .navigation-menu .navigation-item a.active{  background:
 .inner-section-service  { overflow-x: hidden;   padding: 120px 0 0px 0;}
 .inner-section-service .container h3 { position: absolute; z-index: 1; top: 0px; font-size: 100px; color: var(--textStyle); font-family: "Lemon Milk", sans-serif; line-height: 1.2; margin: 0px;}
 .inner-section-service .container h4 { font-family: "Lemon Milk", sans-serif; font-weight: 700; color: var(--black); margin: 0px; margin-bottom: 6px;}
-.inner-section-service h2 {max-width: 895px;}
+.inner-section-service h2 {max-width: 895px; margin-bottom: 80px;} 
 /* .inner-section-service h2 {max-width: 895px; margin-bottom: 80px;} */
 .inner-section-service .service-items {position: relative; display: flex; flex-direction: column; }
-.inner-section-service .service-items .service-item{display: flex; position: relative; align-items: flex-start; gap: 48px; padding-top: 60px;}
+.inner-section-service .service-items .service-item{display: flex; position: relative; align-items: flex-start; gap: 48px; padding-top: 90px;}
+.inner-section-service .service-items .service-item:first-child{  padding-top: 0px;}
 .inner-section-service .service-items .service-item:nth-child(odd){display: flex; position: relative; align-items: flex-start; gap: 48px;}
 .inner-section-service .service-items .service-item:nth-child(even){ flex-direction: row-reverse;}
 

@@ -169,7 +169,7 @@ document.addEventListener("keydown", (e) => {
 // }); 
 (function () {
   const header = document.querySelector("header");
-  const stickyOffset = 0;
+  const stickyOffset = 10;
 
   window.addEventListener("scroll", function () {
     if (window.scrollY > stickyOffset) {

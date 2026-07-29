@@ -514,7 +514,7 @@ header .navigation .navigation-menu .navigation-item a.active{  background:
 
 
 /* ********|| FOOTER STARTS ||******** */
-.footer{ background:linear-gradient(135deg,#0B5D63 0%,#3D0A5F 45%,#5A005A 100%); padding:210px 0px 35px 0px; overflow-x: hidden;}
+.footer{ background:linear-gradient(135deg,#0B5D63 0%,#3D0A5F 45%,#5A005A 100%); padding:210px 0px 35px 0px; overflow: hidden;}
 .footer-top{ display:grid; grid-template-columns:1.2fr 1fr 1fr 1.4fr; gap:70px; padding:45px 0; border-top:1px solid rgba(255,255,255,.12); border-bottom:1px solid rgba(255,255,255,.12);}
 .footer-logo  { display: flex; align-items: center; justify-content: center;}
 .footer-logo img{  max-width:180px;} 

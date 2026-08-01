@@ -238,6 +238,23 @@ textarea.form-control{ resize:none; min-height: 100px;}
 
 .alt-btn:hover::before { width: 100%;}
 .alt-btn:hover { color: #fff !important; box-shadow: 0 5px 20px 0 #581D65;}
+
+
+.cta-btn { position: relative; font-size: 16px; display: inline-block; padding: 10px 20px; border-radius: 50px; border: 2px solid transparent; color: #fff; font-weight: 700; text-decoration: none; overflow: hidden; z-index: 1; background: transparent padding-box,
+        linear-gradient(to right, #0DAAC9, #2B6A9D, #581D65, #981B8A) border-box;
+ }
+ 
+.cta-btn::before { content: ""; position: absolute; top: 0; left: 0; width: 0; height: 100%; border-radius: 50px; background: linear-gradient(
+        to right,
+        #0DAAC9,
+        #2B6A9D,
+        #581D65,
+        #981B8A
+    );  transition: width 0.4s ease-in-out;  z-index: -1;}
+
+.cta-btn:hover::before { width: 100%;}
+.cta-btn:hover { color: #fff !important; box-shadow: 0 5px 20px 0 #581D65;}
+header.sticky  .btn-wrap .cta-btn{color: var(--bodyBg);}
 h2{font-size: 60px; font-family: "Lemon Milk", sans-serif; line-height: 1.2;  margin-bottom: 10px; background: linear-gradient(to right, #0DAAC9, #2B6A9D, #581D65, #981B8A); -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
